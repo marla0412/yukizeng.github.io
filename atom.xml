@@ -6,7 +6,7 @@
   <link href="https://marla0412.github.io/yukizeng.github.io/atom.xml" rel="self"/>
   
   <link href="https://marla0412.github.io/yukizeng.github.io/"/>
-  <updated>2023-05-30T05:53:40.747Z</updated>
+  <updated>2023-05-30T07:10:38.310Z</updated>
   <id>https://marla0412.github.io/yukizeng.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://marla0412.github.io/yukizeng.github.io/2023/05/30/GAMES101-%E8%AF%BE%E7%A8%8B2/"/>
     <id>https://marla0412.github.io/yukizeng.github.io/2023/05/30/GAMES101-%E8%AF%BE%E7%A8%8B2/</id>
     <published>2023-05-30T04:32:15.485Z</published>
-    <updated>2023-05-30T05:53:40.747Z</updated>
+    <updated>2023-05-30T07:10:38.310Z</updated>
     
     
     
@@ -38,7 +38,7 @@
     <link href="https://marla0412.github.io/yukizeng.github.io/2023/05/30/GAMES101%E4%BD%9C%E4%B8%9A1/"/>
     <id>https://marla0412.github.io/yukizeng.github.io/2023/05/30/GAMES101%E4%BD%9C%E4%B8%9A1/</id>
     <published>2023-05-30T04:31:19.497Z</published>
-    <updated>2023-05-30T07:00:24.060Z</updated>
+    <updated>2023-05-30T08:42:09.078Z</updated>
     
     
     
@@ -57,8 +57,15 @@
     <link href="https://marla0412.github.io/yukizeng.github.io/2023/05/30/GAMES101%E4%BD%9C%E4%B8%9A0/"/>
     <id>https://marla0412.github.io/yukizeng.github.io/2023/05/30/GAMES101%E4%BD%9C%E4%B8%9A0/</id>
     <published>2023-05-30T04:31:03.204Z</published>
-    <updated>2023-05-30T05:58:39.317Z</updated>
+    <updated>2023-05-30T08:40:57.426Z</updated>
     
+    <content type="html"><![CDATA[<h1 id="GAMES101作业0——虚拟环境配置以及二维坐标变换"><a href="#GAMES101作业0——虚拟环境配置以及二维坐标变换" class="headerlink" title="GAMES101作业0——虚拟环境配置以及二维坐标变换"></a>GAMES101作业0——虚拟环境配置以及二维坐标变换</h1><p><a href="http://games-cn.org/forums/topic/graphics-intro-hw0/">作业0下载链接</a><br><a href="http://games-cn.org/forums/topic/graphics-intro-hw0/">作业0ans</a></p><h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="安装虚拟机"><a href="#安装虚拟机" class="headerlink" title="安装虚拟机"></a>安装虚拟机</h3><p>本课程使用的是 <strong>Oracle VirtualBox</strong>虚拟机，下载链接如下：</p><p><strong>Windows系统</strong>：<a href="https://download.virtualbox.org/virtualbox/6.1.4/VirtualBox-6.1.4-136177-Win.exe">https://download.virtualbox.org/virtualbox/6.1.4/VirtualBox-6.1.4-136177-Win.exe</a></p><p><strong>Mac OS系统</strong>： <a href="https://download.virtualbox.org/virtualbox/6.1.4/VirtualBox-6.1.4-136177-OSX.dmg">https://download.virtualbox.org/virtualbox/6.1.4/VirtualBox-6.1.4-136177-OSX.dmg</a></p><p><strong>Linux内核的系统</strong>： <a href="https://www.virtualbox.org/wiki/Linux_Downloads%EF%BC%8C">https://www.virtualbox.org/wiki/Linux_Downloads，</a></p><p>安装直接按照指示进行完成安装</p><h3 id="安装虚拟机-1"><a href="#安装虚拟机-1" class="headerlink" title="安装虚拟机"></a>安装虚拟机</h3><p>虚拟磁盘的下载地址为：<a href="https://drive.google.com/drive/folders10Z_GCxwN-k3GvdbDj0nzh8dx6BRPqfk2?usp=sharing">https://drive.google.com/drive/folders10Z_GCxwN-k3GvdbDj0nzh8dx6BRPqfk2?usp=sharing</a> ,下载完成后得到GAMES101_Ubuntu 18.04.2(64bit).rar，将其解压后得到虚拟硬盘文件GAMES101_Ubuntu 18.04.2 (64bit).vdi。</p><h3 id="配置虚拟机"><a href="#配置虚拟机" class="headerlink" title="配置虚拟机"></a>配置虚拟机</h3><p>打开Virtual Box，点击新建，设置类型为Linux，版本为Ubuntu-64 bit，<br>建议设置虚拟机的内存大小为2GB，然后选择使用已有的虚拟硬盘文件，设置为<br>之前解压得到的GAMES101_Ubuntu 18.04.2 (64bit).vdi，最后点击创建就<br>完成了虚拟机的配置工作。<br><img src="https://s2.loli.net/2023/05/30/X6At8BYSba7jNI9.png" alt="配置虚拟机"><br>之后就可以使用创建好的虚拟机了，选中刚刚创建好的虚拟机，点击右侧上方的启动按钮就可以打开虚拟机了，Ubuntu 系统的密码为<strong>Ilovegraphics</strong>。<br><font color=Red>注：可能会出现打不开虚拟机，错误原因为 <strong>Failed to get device handle and&#x2F;or partition ID</strong> </font> <a href="https://blog.csdn.net/weixin_42094764/article/details/125101332">解决方法</a></p><h3 id="安装Guest-Additions"><a href="#安装Guest-Additions" class="headerlink" title="安装Guest Additions"></a>安装Guest Additions</h3><p>进入系统后，点击上方菜单的设备，点击安装增强功能，如下图所示。安装完成后，重启虚拟机系统就完成了Guest Additions 的安装。<br><img src="https://s2.loli.net/2023/05/30/YU1BOHVrWD8IKsp.png" alt="安装Guest Additions"></p><h3 id="作业框架的传输及编辑"><a href="#作业框架的传输及编辑" class="headerlink" title="作业框架的传输及编辑"></a>作业框架的传输及编辑</h3><p>作业框架的导入和导出有很多种方式，这里只提一种。当你在你的主机上下载好作业框架后，直接将其拖进虚拟机系统里。这里需要开启Virtual Box 的拖放功能：进入虚拟机系统后，点击上方菜单的设备，将拖放功能设置为双向即可。<br><img src="https://s2.loli.net/2023/05/30/URnYubAw7DNpIKk.png" alt="双向拖放设置"><br><font color=Red>注：可能会出现不能实现双向拖拽 </font><a href="https://blog.csdn.net/Dryhten/article/details/115049664">解决方法</a><br>导入作业框架后，可以使用Visual Studio Code 来查看和编辑。右键作业框<br>架的文件夹，选择使用其他应用来打开，选择Visual Studio Code。</p><h2 id="作业讲解"><a href="#作业讲解" class="headerlink" title="作业讲解"></a>作业讲解</h2><p>完成以上配置后终于可以开始作业的编写了，给定一个点P&#x3D;(2,1), 将该点绕原点先逆时针旋转45◦，再平移(1,2), 计算出变换后点的坐标（要求用齐次坐标进行计算）。</p> <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;eigen3/Eigen/Core&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;eigen3/Eigen/Dense&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> Eigen;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function">Vector3f  <span class="title">p</span><span class="params">(<span class="number">2.0</span>,<span class="number">1.0</span>)</span>,Pc</span>;</span><br><span class="line">    <span class="type">float</span> a=<span class="built_in">cos</span>(<span class="number">45</span>/<span class="number">180.0</span>*<span class="built_in">acos</span>(<span class="number">-1</span>)),b=<span class="built_in">sin</span>(<span class="number">45</span>/<span class="number">180.0</span>*<span class="built_in">acos</span>(<span class="number">-1</span>));</span><br><span class="line">    Matrix3f R,M;</span><br><span class="line">    R&lt;&lt;a,-b,<span class="number">0</span>,b,a,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>;</span><br><span class="line">    M&lt;&lt;<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">2</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>;</span><br><span class="line">    Pc=M*R*p;</span><br><span class="line">    cout&lt;&lt;p&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;Pc&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>代码完成后就是编译过程，打开终端依次输入一下命令：<br> <figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mkdir build </span><br><span class="line">cd build</span><br><span class="line">cmake ..</span><br><span class="line">make</span><br><span class="line">./Transformation</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;GAMES101作业0——虚拟环境配置以及二维坐标变换&quot;&gt;&lt;a href=&quot;#GAMES101作业0——虚拟环境配置以及二维坐标变换&quot; class=&quot;headerlink&quot; title=&quot;GAMES101作业0——虚拟环境配置以及二维坐标变换&quot;&gt;&lt;/a&gt;GAMES</summary>
+      
     
     
     
